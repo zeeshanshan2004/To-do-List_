@@ -68,8 +68,16 @@ public function edit($id) {
 
 // Update Task
 public function update(Request $request, $id) {
-    $card = Card::findOrFail($id);
+    $card = Card::findOrFail($id);    
     $card->update($request->only(['title', 'description']));
     return redirect('/')->with('success', 'Task updated!');
+}
+public function reorder(Request $request)
+{
+    $card = Card::findOrFail($request->card_id);
+    $card->task_list_id = $request->list_id;
+    $card->save();
+
+    return response()->json(['status' => 'success']);
 }
 }

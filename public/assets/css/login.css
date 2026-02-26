@@ -1,0 +1,101 @@
+ /* Global Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px; /* Mobile par spacing ke liye */
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px; /* Tablet/Desktop limit */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        /* Inputs Alignment */
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            margin-top: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px; /* Mobile zoom issue se bachne ke liye */
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #3490dc;
+        }
+
+        /* Buttons Styling */
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 25px;
+            background: #3490dc;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #2779bd;
+        }
+
+        .btn-website {
+            display: block;
+            text-align: center;
+            background: #6c757d;
+            color: white !important;
+            padding: 12px;
+            margin-top: 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .btn-website:hover {
+            background: #5a6268;
+        }
+
+        .error {
+            color: #e3342f;
+            background: #fcebea;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            border: 1px solid #efb2af;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .login-box {
+                padding: 25px 20px;
+            }
+        }

@@ -6,7 +6,6 @@
  <link rel="stylesheet" href="{{ asset('css/board.css') }}">
 </head>
 <body>
-    <!-- <h1>Project  Board</h1> -->
     <div class="board">
         @foreach($lists as $list)
             <div class="column">

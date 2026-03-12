@@ -15,8 +15,9 @@
         }
         .cards { min-height: 50px; } /* Khali column mein drop karne ke liye */
     </style>
-</head>
+</head> 
 <body>
+
     <h1>Project To-do List</h1>
 
     <div class="board">
